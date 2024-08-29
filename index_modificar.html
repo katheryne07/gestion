@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Modficar Datos</title>
+    <style>
+        body {
+            background-color: #f3f3f3;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            color: #7246c9;
+            margin-bottom: 20px;
+        }
+
+        table {
+            background-color: #d0bbf3;
+            border-collapse: collapse;
+            width: 70%;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #a67efd;
+            color: white;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+        }
+
+        td {
+            border-bottom: 1px solid #ddd;
+        }
+
+        input[type="text"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #9370DB;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #8464C3;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        textarea {
+            width: 90%;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .form-header {
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            table {
+                width: 90%;
+            }
+        }
+        .btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #9370DB;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid transparent; /* Añadido para mejorar la apariencia del botón */
+    transition: background-color 0.3s, border-color 0.3s; /* Transición suave para el hover */
+}
+
+.btn-back:hover {
+    background-color: #8a2be2;
+    border-color: #8a2be2; /* Cambia el color del borde en el hover */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-header">
+            <h1>Modificar Datos De Los Alumnos</h1>
+        </div>
+        <form action="buscar_alumno.php" method="post">
+
+            <center><input type="submit" value="Modificar Datos"></center><br>
+        </form>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                background-color: #f3f3f3;
+            }
+            .slider {
+                position: relative;
+                max-width: 500px; /* Ajusta el ancho del slider según sea necesario */
+                margin: auto;
+                overflow: hidden;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+            .slides {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+            }
+            .slide {
+                min-width: 100%;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .slide img {
+                max-width: 100%;
+                max-height: 300px; /* Ajusta la altura máxima de las imágenes según sea necesario */
+                object-fit: contain; /* Ajusta la imagen para que no se recorte */
+            }
+            .controls {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                transform: translateY(-50%);
+            }
+            .control-left, .control-right {
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                font-size: 20px;
+                border-radius: 50%;
+                z-index: 10;
+            }
+            .control-left {
+                margin-left: 10px;
+            }
+            .control-right {
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="https://th.bing.com/th/id/OIP.epZx8VR4OfbwNhHchL7LUQHaIn?rs=1&pid=ImgDetMain" alt="Imagen 1"></div>
+                <div class="slide"><img src="https://i.pinimg.com/564x/d8/d0/7e/d8d07e450d6e57e97eee91117330fdc1.jpg" alt="Imagen 2"></div>
+                <div class="slide"><img src="https://i.pinimg.com/564x/6b/06/44/6b064412644574ac5f2482cdbd98fb66.jpg" alt="Imagen 3"></div>
+                <div class="slide"><img src="https://i.pinimg.com/564x/f1/74/e1/f174e12677061b9d011fc17ebb392cbb.jpg" alt="Imagen 4"></div>
+                <div class="slide"><img src="https://i.pinimg.com/564x/a0/91/fc/a091fcb3a9ead92c36fbd861261deb95.jpg" alt="Imagen 5"></div>
+            </div>
+            <div class="controls">
+                <button class="control-left">&lt;</button>
+                <button class="control-right">&gt;</button>
+            </div>
+        </div>
+    
+        <script>
+            // Código para el funcionamiento del slider
+            const slides = document.querySelector('.slides');
+            const totalSlides = document.querySelectorAll('.slide').length;
+            let slideIndex = 0;
+    
+            document.querySelector('.control-left').addEventListener('click', () => {
+                slideIndex = (slideIndex === 0) ? totalSlides - 1 : slideIndex - 1;
+                updateSlidePosition();
+            });
+    
+            document.querySelector('.control-right').addEventListener('click', () => {
+                slideIndex = (slideIndex === totalSlides - 1) ? 0 : slideIndex + 1;
+                updateSlidePosition();
+            });
+    
+            function updateSlidePosition() {
+                slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+            }
+        </script>
+        <!-- Botón para volver a la página anterior -->
+    <center><a href="index.html" class="btn-back">Volver</a></center><br>
+    </body>
+</html>

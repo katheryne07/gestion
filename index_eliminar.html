@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Registro</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .img-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .img-container img {
+            width: 150px; /* Ajusta el ancho */
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
+    </style>
+</head>
+<body>
+    <div class="img-container">
+        <img src="https://th.bing.com/th/id/OIP.epZx8VR4OfbwNhHchL7LUQHaIn?rs=1&pid=ImgDetMain" alt="Imagen en la esquina superior izquierda">
+    </div>
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        h1, h3 {
+            color: #7246c9;
+        }
+        table {
+            background-color: #c4a8f0;
+            border: 1px solid #7246c9;
+            border-collapse: collapse;
+            width: 40%;
+            margin: 0 auto;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #7246c9;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #7246c9;
+        }
+        input[type="submit"] {
+            background-color: #9370DB;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #7246c9;
+        }
+        textarea {
+            width: 50%;
+            height: 80px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #7246c9;
+            resize: none;
+            margin: 0 auto;
+        }
+        .btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #9370DB;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid transparent; /* Añadido para mejorar la apariencia del botón */
+    transition: background-color 0.3s, border-color 0.3s; /* Transición suave para el hover */
+}
+
+.btn-back:hover {
+    background-color: #8a2be2;
+    border-color: #8a2be2; /* Cambia el color del borde en el hover */
+}
+
+    </style>
+</head>
+<body>
+    <center><h1>Eliminar Registro</h1></center>
+    <center><h3>Si quieres eliminar un registro, solo ingresa el ID del Alumno.</h3></center><br>
+    <form action="form_eliminar.php" method="POST">
+        <center>
+            <table>
+                <tr>
+                    <th><label for="id">ID del Alumno:</label></th>
+                    <td><input type="text" name="id" id="id" required></td>
+                </tr>
+            </table>
+        </center><br>
+        <center><input type="submit" value="Eliminar Alumno"></center><br>
+         <!-- Botón para volver a la página anterior -->
+    <center><a href="index.html" class="btn-back">Volver</a></center>
+    </form>
+</body>
+</html>
