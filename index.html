@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e5c9ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #a661ff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+        }
+
+        nav ul li a:hover {
+            background-color: #8e52db;
+            border-radius: 4px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .container a {
+            display: inline-block;
+            background-color: #8e52db;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        .container a:hover {
+            background-color: #8e52db;
+        }
+
+        body {
+            background-color: #f3f3f3;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        textarea {
+            width: 60%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #9370DB;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #8464C3;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index_agregar.html">Agregar Alumno</a></li>
+            <li><a href="index_eliminar.html">Eliminar Alumno</a></li>
+            <li><a href="index_modificar.html">Modificar Alumno</a></li>
+            <li><a href="index_buscar.html">Buscar Alumnos</a></li>
+            <li><a href="consulta_general.php">Consulta General</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="color: #8464C3;">Menú Principal - Gestión de Alumnos</h1>
+
+    <div class="container">
+        <a href="index_agregar.html">Agregar Alumno</a>
+        <a href="index_eliminar.html">Eliminar Alumno</a>
+        <a href="index_modificar.html">Modificar Alumno</a>
+        <a href="index_buscar.html">Buscar Alumnos</a>
+        <a href="consulta_general.php">Consulta General</a>
+    </div>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+        }
+        .slider {
+            position: relative;
+            max-width: 500px; /* Ajusta el ancho del slider según sea necesario */
+            margin: auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .slide img {
+            max-width: 100%;
+            max-height: 300px; /* Ajusta la altura máxima de las imágenes según sea necesario */
+            object-fit: contain; /* Ajusta la imagen para que no se recorte */
+        }
+        .controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .control-left, .control-right {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 50%;
+            z-index: 10;
+        }
+        .control-left {
+            margin-left: 10px;
+        }
+        .control-right {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="https://th.bing.com/th/id/OIP.epZx8VR4OfbwNhHchL7LUQHaIn?rs=1&pid=ImgDetMain" alt="Imagen 1"></div>
+            <div class="slide"><img src="https://i.pinimg.com/564x/8c/e9/7c/8ce97c1ccf5c096ae58adedfbd49d19b.jpg" alt="Imagen 2"></div>
+            <div class="slide"><img src="https://i.pinimg.com/564x/43/94/65/439465bd8365f8d3a70a321859bcaa55.jpg" alt="Imagen 3"></div>
+            <div class="slide"><img src="https://i.pinimg.com/564x/6d/c6/1d/6dc61db4e8728281da5eb2362aa249d4.jpg" alt="Imagen 4"></div>
+            <div class="slide"><img src="https://i.pinimg.com/564x/c7/bb/68/c7bb6896dcbe5cf7ea9584c0e231d8ec.jpg" alt="Imagen 5"></div>
+        </div>
+        <div class="controls">
+            <button class="control-left">&lt;</button>
+            <button class="control-right">&gt;</button>
+        </div>
+    </div>
+
+    <script>
+        // Código para el funcionamiento del slider
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+        let slideIndex = 0;
+
+        document.querySelector('.control-left').addEventListener('click', () => {
+            slideIndex = (slideIndex === 0) ? totalSlides - 1 : slideIndex - 1;
+            updateSlidePosition();
+        });
+
+        document.querySelector('.control-right').addEventListener('click', () => {
+            slideIndex = (slideIndex === totalSlides - 1) ? 0 : slideIndex + 1;
+            updateSlidePosition();
+        });
+
+        function updateSlidePosition() {
+            slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+    </script>
+    <div class="form-header">
+        <center><h2 style="color: #8464C3;">Comentarios</h2></center>
+    </div>
+    <center>
+        <form action="guardar_comentario.php" method="post">
+            <textarea name="comentarios" rows="4" cols="50" placeholder="Ingrese sus comentarios aquí..."></textarea><br>
+            <input type="submit" value="Agregar Comentario"><br>
+        </form>
+    </center>
+</div>
+</body>
+</html>
